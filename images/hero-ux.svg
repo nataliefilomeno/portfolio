@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1200" width="1600" height="1200" role="img" aria-label="Ilustração de wireframes, fluxo de jornada e celular, em tons de roxo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b0f4f"/>
+      <stop offset="1" stop-color="#1f3954"/>
+    </linearGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.6" fill="#d8c4ff" opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <!-- background and grid -->
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <rect width="1600" height="1200" fill="url(#dots)"/>
+
+  <!-- desktop wireframe -->
+  <g fill="none" stroke="#d8c4ff" stroke-width="3" opacity="0.7">
+    <rect x="170" y="170" width="800" height="520" rx="24"/>
+    <line x1="170" y1="226" x2="970" y2="226"/>
+    <line x1="330" y1="226" x2="330" y2="690"/>
+  </g>
+  <rect x="170" y="170" width="800" height="56" rx="24" fill="#9d00ff" opacity="0.35"/>
+  <circle cx="206" cy="198" r="8" fill="#d8c4ff" opacity="0.8"/>
+  <circle cx="234" cy="198" r="8" fill="#d8c4ff" opacity="0.5"/>
+  <circle cx="262" cy="198" r="8" fill="#d8c4ff" opacity="0.3"/>
+  <rect x="360" y="250" width="380" height="18" rx="9" fill="#d8c4ff" opacity="0.6"/>
+  <rect x="360" y="282" width="260" height="12" rx="6" fill="#d8c4ff" opacity="0.3"/>
+
+  <g fill="none" stroke="#d8c4ff" stroke-width="2.5" opacity="0.6">
+    <rect x="360" y="320" width="180" height="120" rx="14"/>
+    <rect x="560" y="320" width="180" height="120" rx="14"/>
+    <rect x="760" y="320" width="180" height="120" rx="14"/>
+  </g>
+  <rect x="380" y="350" width="60" height="10" rx="5" fill="#d8c4ff" opacity="0.6"/>
+  <rect x="380" y="372" width="120" height="8" rx="4" fill="#d8c4ff" opacity="0.3"/>
+  <rect x="580" y="350" width="60" height="10" rx="5" fill="#d8c4ff" opacity="0.6"/>
+  <rect x="580" y="372" width="120" height="8" rx="4" fill="#d8c4ff" opacity="0.3"/>
+  <rect x="780" y="350" width="60" height="10" rx="5" fill="#d8c4ff" opacity="0.6"/>
+  <rect x="780" y="372" width="120" height="8" rx="4" fill="#d8c4ff" opacity="0.3"/>
+
+  <!-- bar chart -->
+  <g fill="#9d00ff" opacity="0.85">
+    <rect x="380" y="600" width="44" height="60" rx="6"/>
+    <rect x="442" y="550" width="44" height="110" rx="6"/>
+    <rect x="504" y="580" width="44" height="80" rx="6"/>
+    <rect x="566" y="500" width="44" height="160" rx="6"/>
+    <rect x="628" y="540" width="44" height="120" rx="6"/>
+  </g>
+
+  <!-- phone wireframe -->
+  <rect x="1090" y="250" width="300" height="620" rx="48" fill="#1f3954" stroke="#d8c4ff" stroke-width="4" opacity="0.95"/>
+  <rect x="1110" y="290" width="260" height="540" rx="30" fill="#faf5f0" opacity="0.08"/>
+  <rect x="1210" y="266" width="60" height="14" rx="7" fill="#d8c4ff" opacity="0.8"/>
+  <rect x="1130" y="330" width="220" height="120" rx="18" fill="none" stroke="#d8c4ff" stroke-width="2.5" opacity="0.6"/>
+  <rect x="1150" y="356" width="90" height="12" rx="6" fill="#d8c4ff" opacity="0.6"/>
+  <rect x="1150" y="378" width="150" height="8" rx="4" fill="#d8c4ff" opacity="0.3"/>
+  <rect x="1130" y="470" width="220" height="80" rx="18" fill="none" stroke="#d8c4ff" stroke-width="2.5" opacity="0.6"/>
+  <rect x="1150" y="496" width="120" height="8" rx="4" fill="#d8c4ff" opacity="0.3"/>
+  <rect x="1130" y="700" width="220" height="56" rx="28" fill="#9d00ff"/>
+  <rect x="1190" y="720" width="100" height="10" rx="5" fill="#ffffff" opacity="0.9"/>
+
+  <!-- flow between desktop and phone -->
+  <path d="M970 420 C1020 420 1040 330 1090 330" fill="none" stroke="#9d00ff" stroke-width="4" stroke-dasharray="12 10" stroke-linecap="round"/>
+  <path d="M970 480 C1020 480 1040 560 1090 560" fill="none" stroke="#9d00ff" stroke-width="4" stroke-dasharray="12 10" stroke-linecap="round"/>
+  <circle cx="1020" cy="330" r="22" fill="#9d00ff"/>
+  <text x="1020" y="338" text-anchor="middle" font-family="system-ui, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">1</text>
+  <circle cx="1020" cy="560" r="22" fill="#9d00ff"/>
+  <text x="1020" y="568" text-anchor="middle" font-family="system-ui, Arial, sans-serif" font-size="22" font-weight="700" fill="#ffffff">2</text>
+
+  <!-- pen tool path with anchors and handles -->
+  <path d="M200 1000 C380 880 520 1110 700 960 S980 860 1060 1000" fill="none" stroke="#d8c4ff" stroke-width="2.5" opacity="0.55"/>
+  <line x1="200" y1="1000" x2="260" y2="930" stroke="#d8c4ff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="700" y1="960" x2="640" y2="1040" stroke="#d8c4ff" stroke-width="1.5" opacity="0.5"/>
+  <rect x="192" y="992" width="16" height="16" fill="#faf5f0"/>
+  <rect x="692" y="952" width="16" height="16" fill="#faf5f0"/>
+  <rect x="1052" y="992" width="16" height="16" fill="#faf5f0"/>
+  <circle cx="260" cy="930" r="6" fill="#faf5f0"/>
+  <circle cx="640" cy="1040" r="6" fill="#faf5f0"/>
+
+  <!-- sticky note -->
+  <rect x="1120" y="860" width="260" height="150" rx="8" fill="#9d00ff" opacity="0.92"/>
+  <text x="1145" y="906" font-family="system-ui, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">Discovery</text>
+  <text x="1145" y="944" font-family="system-ui, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">→ Fluxo</text>
+  <text x="1145" y="982" font-family="system-ui, Arial, sans-serif" font-size="26" font-weight="600" fill="#ffffff">→ Teste</text>
+
+  <!-- cursor -->
+  <g transform="translate(1040 780)">
+    <path d="M0 0 L0 34 L10 25 L18 42 L24 39 L16 22 L28 22 Z" fill="#ffffff" stroke="#1b1411" stroke-width="2"/>
+  </g>
+</svg>
