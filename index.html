@@ -815,7 +815,19 @@
 <script data-8b-part="motion-gate">
 if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.supports('animation-timeline: view()')) document.documentElement.setAttribute('data-8b-live', '');
 </script>
-</head>
+<style data-8b-part="section:hero-gradient">
+  #hero { background: linear-gradient(160deg, #5b1fb0 0%, #2b0f4f 55%, #2b0f4f 100%); }
+  #hero::after { background: #2b0f4f; }
+</style><style data-8b-part="section:hero-photo">
+  #hero .hero__photo { position: absolute; z-index: 2; right: clamp(1.5rem, 7vw, 8rem); top: 50%; translate: 0 -50%; width: min(34vw, 420px); aspect-ratio: 1; margin: 0; }
+  #hero .hero__photo::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 30% 25%, #c77dff 0%, #9d00ff 35%, #5b1fb0 65%, #2b0f4f 100%); }
+  #hero .hero__photo img { position: relative; width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  #hero .hero__orbit { position: absolute; inset: -12%; border-radius: 50%; border: 1px solid rgba(216, 196, 255, 0.35); pointer-events: none; }
+  #hero .hero__orbit::after { content: ""; position: absolute; top: 9%; right: 6%; width: 14%; aspect-ratio: 1; border-radius: 50%; background: #9d00ff; box-shadow: 0 0 24px #9d00ff; }
+  @media (max-width: 760px) {
+    #hero .hero__photo { position: relative; right: auto; top: auto; translate: none; width: min(60vw, 260px); margin: 2rem auto 0; }
+  }
+</style></head>
 <body class="m-text">
 <a class="skip-link m-text-6" href="#main">Skip to content</a>
 <!-- navigation: top bar: logo, section links, call-to-action button; phone menu overlay -->
@@ -850,10 +862,11 @@ if (matchMedia('(prefers-reduced-motion: no-preference)').matches && CSS.support
 <main id="main">
 <!-- hero: first screen: headline over a full-bleed illustration, lead, proof line, buttons; caption chips ride curved lines across the illustration (animation: scene:hero) -->
 <section class="hero on-dark" id="hero" data-8b-section="hero" aria-labelledby="hero-title">
-  <div class="hero__media">
-    <img src="images/hero-ux.svg" width="1600" height="1200" alt="Ilustração de wireframes, fluxo de jornada e celular, em tons de roxo" fetchpriority="high" decoding="async">
-  </div>
   <div class="hero__shade" aria-hidden="true"></div>
+  <figure class="hero__photo">
+    <div class="hero__orbit" aria-hidden="true"></div>
+    <img src="images/hero-photo.png" width="480" height="480" alt="Retrato de Natalie Ferreira" decoding="async">
+  </figure>
   <div class="hero__talk" aria-hidden="true">
     <div class="hero__draw">
       <svg class="hero__lines">
